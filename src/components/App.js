@@ -1,6 +1,6 @@
 import './App.css'
 
-import Banner from './banner';
+import Banner from './Banner.jsx';
 
 function App() {
     return <Banner />
