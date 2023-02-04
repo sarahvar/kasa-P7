@@ -1,5 +1,5 @@
-import "../Banner/Banner.css";
-import homeimg from "../images/accueil-banner.jpg";
+import "./Banner.css";
+import homeimg from "../../assets/images/about-banner.jpg";
 
 export default function Homebanner() {
 	return (
