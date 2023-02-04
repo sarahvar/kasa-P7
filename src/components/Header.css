@@ -1,19 +1,23 @@
-
-
 .headerimg {
 	width: 262px;
     height: 68px;
 }
 header {
-    display : flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 3% auto;
+    padding: 0 8%;
+  }
 header nav ul {
     display : flex;
     gap : 32px;
-    
 }
 li {
-   list-style : none
+   list-style : none;
+}
+header nav a {
+    color: #ff6060;
+    font-size: 1.5rem;
+    list-style : none;
 }
