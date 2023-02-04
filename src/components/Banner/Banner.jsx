@@ -1,5 +1,12 @@
-function Banner() {
-    return <h1>Kasa</h1>
-}
+import "../Banner/Banner.css";
+import homeimg from "../images/accueil-banner.jpg";
 
-export default Banner
+export default function Homebanner() {
+	return (
+		<div className="layout">
+			<img className="homeimg" src={homeimg} alt="ocean " />
+
+			<h1 className="title-ocean">Chez vous, partout et ailleurs</h1>
+		</div>
+	);
+}
