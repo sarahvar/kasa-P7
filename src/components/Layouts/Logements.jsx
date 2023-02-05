@@ -1,7 +1,11 @@
+import DisplayCards from "./DisplayCards";
 import "./Logements.css";
-import "../../datas.json/logements.json";
 
-export default function Logements(){
-    return
+
+
+export default function Logements() {
+    return (
+        <DisplayCards/>
+    )
 }
-
+   

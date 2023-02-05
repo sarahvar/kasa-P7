@@ -11,9 +11,9 @@ function App() {
     <div>
       <Header />
       <Banner />
-      <Footer />
       <Logements />
-   </div>
+      <Footer />
+    </div>
   );
 }
 
