@@ -79,14 +79,14 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
 article,
 aside,
 details,
@@ -130,13 +130,14 @@ table {
 
 .headerimg {
   width: 210px;
+  margin:auto;
 }
 header {
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
   margin: 3% auto;
-  padding: 0 8%;
+  padding: 0 3%;
 }
 header nav ul {
   display: flex;
@@ -156,7 +157,6 @@ header nav a {
   align-items: center;
   flex-wrap: wrap;
   word-wrap: normal;
-  margin: 40px 110px 0px 110px;
 }
 
 .homeimg {
@@ -166,13 +166,10 @@ header nav a {
 }
 
 .title-ocean {
-  display: flex;
-  flex-wrap: wrap;
-  font-weight: 500;
+  color: #fff;
+  font-size: 28px;
   position: absolute;
-  color: #ffffff;
-  padding-left: 40px;
-  padding-right: 20px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -195,17 +192,17 @@ header nav a {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 32px;
-  background: #e9e9e9;
+  background:#E5E5E5;
+  border-radius: 25px;
 }
 figure {
   position: relative;
   width: 25%;
-  border-radius: 10px;
-  overflow: hidden;
   cursor: pointer;
 }
 figure img {
   width: 100%;
+  border-radius: 10px;
 }
 figure h3 {
   opacity: 0;
@@ -220,5 +217,5 @@ figure h3 {
   transition: opacity 350ms ease-in-out;
 }
 figure:hover h3 {
-   opacity: 1
+  opacity: 1;
 }

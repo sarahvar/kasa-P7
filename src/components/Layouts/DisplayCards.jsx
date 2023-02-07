@@ -1,19 +1,12 @@
 import logements from "../../datas/logements.json";
 import Card from "./Card";
 
-
-
-export default function displayCards(){
-    return(
+export default function displayCards() {
+  return (
     <section className="logements_container">
-        {logements.map(({id, title, cover }) => (
-        <Card
-        key={id}
-        title={title}
-        cover={cover}
-        />
-        ))}
+      {logements.map(({ id, title, cover }) => (
+        <Card key={id} title={title} cover={cover} />
+      ))}
     </section>
-    )
-
+  );
 }

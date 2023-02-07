@@ -10,7 +10,7 @@ export default function Header() {
           <li>
             <a href=""> Accueil </a>
           </li>
-		  <li>
+          <li>
             <a href=""> À propos </a>
           </li>
         </ul>

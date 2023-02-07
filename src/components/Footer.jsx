@@ -1,7 +1,7 @@
 export default function Footer() {
-	return (
-		<div>
-			<h2>Je suis le footer</h2>
-		</div>
-	);
+  return (
+    <div>
+      <h2>Je suis le footer</h2>
+    </div>
+  );
 }
