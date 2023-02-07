@@ -1,7 +1,6 @@
-import "./Logements.css";
 import logements from "../../datas/logements.json";
 import Card from "./Card";
-import "./DisplayCards.css"
+
 
 
 export default function displayCards(){

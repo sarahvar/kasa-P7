@@ -1,4 +1,3 @@
-import "./Banner.css";
 import homeimg from "../../assets/images/accueil-banner.jpg";
 
 export default function Homebanner() {

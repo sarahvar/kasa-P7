@@ -1,5 +1,4 @@
 import DisplayCards from "./DisplayCards";
-import "./Logements.css";
 
 
 
