@@ -1,0 +1,5 @@
+.logements_list figure {
+    flex-basis: 66%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
