@@ -198,6 +198,7 @@ header nav a {
 figure {
   position: relative;
   width: 25%;
+  overflow: visible;
   cursor: pointer;
 }
 figure img {
