@@ -66,10 +66,10 @@ details,
 embed,
 figure,
 figcaption,
-footer,
 header,
 hgroup,
 menu,
+footer,
 nav,
 output,
 ruby,
@@ -79,13 +79,14 @@ time,
 mark,
 audio,
 video {
-  margin: 20px;
+  margin: 10px;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
+
 /* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
 article,
 aside,
@@ -201,9 +202,14 @@ figure {
   overflow: visible;
   cursor: pointer;
 }
+
 figure img {
   width: 100%;
   border-radius: 10px;
+}
+figure img:hover {
+  border:3px solid #ff6060;
+  transform: scale(1.1)
 }
 figure h3 {
   opacity: 0;
@@ -216,7 +222,26 @@ figure h3 {
   font-weight: 500;
   font-size: 18px;
   transition: opacity 350ms ease-in-out;
+
 }
 figure:hover h3 {
   opacity: 1;
+}
+.footer {
+	width: 100%;
+	height: 209px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #000000;
+}
+.logo-footer {
+	padding-top: 60px;
+}
+
+.footer-txt {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 500;
 }
