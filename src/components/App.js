@@ -8,14 +8,16 @@ import Logements from "./Layouts/Logements";
 
 function App() {
   return (
-    <main>
-      <div className="container">
+    <>
+    
       <Header />
-      <Banner />
-      <Logements />
-      </div>
+      <main className="container">
+        <Banner />
+        <Logements />
+      </main>
       <Footer />
-    </main>
+    
+    </>
   );
 }
 
