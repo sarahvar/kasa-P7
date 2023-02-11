@@ -1,7 +1,12 @@
 const Card = ({ id, title, cover }) => {
   return (
     <figure key={id}>
-      <img src={cover} alt={title} />
+      <div>
+        <div>
+        <img src={cover} alt={title} />
+        </div>
+        <div className="filter"></div>
+      </div>
       <h3>{title}</h3>
     </figure>
   );
