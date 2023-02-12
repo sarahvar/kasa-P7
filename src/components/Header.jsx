@@ -9,7 +9,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-          <Link to={"/"}>Accueil</Link>
+          <Link className="accueil" to={"/"}>Accueil</Link>
           </li>
           <li>
             <Link to={"/about"}>A propos</Link>

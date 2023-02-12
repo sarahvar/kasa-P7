@@ -157,9 +157,9 @@ header nav a {
   font-size: 1.5rem;
   text-decoration: none;
 }
-.accueil{
+/*.accueil{
   text-decoration: underline;
-}
+}*/
 
 .layout {
   position: relative;
@@ -173,7 +173,7 @@ header nav a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 48px;
+  font-size: 46px;
   z-index: 1;
 }
 

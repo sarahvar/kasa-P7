@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Aboutbanner from "../components/Layouts/Banner-about";
 import Footer from "../components/Footer";
 
 
@@ -8,7 +9,7 @@ export default function about (){
         
           <Header />
           <main className="container">
-            <h1>hello world</h1>
+            <Aboutbanner />
           </main>
           <Footer />
         
