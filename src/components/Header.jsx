@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 import headerimg from "../assets/images/logo.svg";
 export default function Header() {
   return (
@@ -8,10 +9,10 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href=""> Accueil </a>
+          <Link to={"/"}>Accueil</Link>
           </li>
           <li>
-            <a href=""> À propos </a>
+            <Link to={"/about"}>A propos</Link>
           </li>
         </ul>
       </nav>

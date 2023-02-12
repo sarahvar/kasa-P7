@@ -154,7 +154,10 @@ li {
 header nav a {
   color: #ff6060;
   font-size: 1.5rem;
-  list-style: none;
+  text-decoration: none;
+}
+.accueil{
+  text-decoration: underline;
 }
 
 .layout {
@@ -270,10 +273,10 @@ figure h3 {
     font-size: 32px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   header,
   .container {
-    max-width: 400px;
+    max-width: 300px;
   }
   header nav a {
     font-size: 12px;
@@ -288,6 +291,7 @@ figure h3 {
     background: none;
     margin: 3% 0;
     padding: 0;
+    gap: 20px;
   }
   .logements_container figure {
     width: 100%;
