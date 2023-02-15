@@ -237,6 +237,7 @@ figure h3 {
   justify-content: center;
   align-items: center;
   background-color: #000000;
+  margin-top: 60px;
 }
 .logo-footer {
   padding-top: 30px;
@@ -278,6 +279,7 @@ figure h3 {
 }
 
 .button {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -288,6 +290,12 @@ figure h3 {
   background-color: #ff6060;
   border: 1px solid #ff6060;
   border-radius: 5px;
+}
+.text{
+  color: #FF6060;
+  margin-top: 27px;
+  size:24px;
+  font-weight: 400;
 }
 
 /* Médias queries */
