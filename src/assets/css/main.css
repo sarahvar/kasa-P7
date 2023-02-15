@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
 html,
 body,
 div,
@@ -85,7 +86,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
@@ -129,7 +129,9 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
-
+* html, body{
+  font-family: 'Montserrat', sans-serif;
+}
 header,
 .container {
   max-width: 1200px;
@@ -245,7 +247,34 @@ figure h3 {
   font-size: 24px;
   font-weight: 500;
 }
-
+/*Error 404*/
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
+  font-weight: 700;
+  margin: 30px;
+}
+.title-error {
+  margin-top: 45px;
+  font-size: 288px;
+  text-align: center;
+}
+.oups {
+  text-align: center;
+  margin: 66px 0;
+  font-size: 36px;
+  font-weight: normal;
+}
+.link-accueil{
+  display:block;
+  text-align: center;
+  font-size: 18px;
+	font-weight: 500;
+	color: #ff6060;
+}
 /* Médias queries */
 
 @media screen and (max-width: 1024px) {
@@ -260,6 +289,12 @@ figure h3 {
   .logements_container figure h3 {
     top: 70%;
     font-size: 16px;
+  }
+  .oups {
+    font-size: 24px;
+  }
+  .title-error {
+    font-size: 200px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -277,7 +312,7 @@ figure h3 {
 @media screen and (max-width: 500px) {
   header,
   .container {
-    max-width: 300px;
+    max-width: 450px;
   }
   header nav a {
     font-size: 12px;
@@ -299,6 +334,12 @@ figure h3 {
     height: 255px;
 }
 .logements_container figure h3 {
+  font-size: 18px;
+}
+.title-error{
+  font-size: 86px;
+}
+.oups{
   font-size: 18px;
 }
 }
