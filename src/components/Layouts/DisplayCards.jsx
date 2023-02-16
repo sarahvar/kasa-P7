@@ -4,11 +4,12 @@ import Card from "./Card";
 
 export default function displayCards() {
   return (
-    <Link to = "/logement"><section className="logements_container">
+    <section className="logements_container">
       {logements.map(({ id, title, cover }) => (
-        <Card key={id} title={title} cover={cover} />
+        <Link to={`logement/${id}`}>
+          <Card key={id} title={title} cover={cover} />
+        </Link>
       ))}
     </section>
-    </Link>
   );
 }

@@ -160,10 +160,9 @@ header nav a {
   font-size: 1.5rem;
   text-decoration: none;
 }
-/*.accueil{
-  text-decoration: underline;
-}*/
-
+header nav a:focus{
+  border-bottom: 3px solid #ff6060 ;
+}
 .layout {
   position: relative;
   border-radius: 10px;
@@ -197,9 +196,12 @@ header nav a {
   margin: 43px 0;
   padding: 53px 50px;
 }
+.logements_container a{
+  display:block;
+  width: 30%;
+}
 figure {
   position: relative;
-  width: 30%;
   height: 340px;
   overflow: hidden;
   border-radius: 10px;
@@ -293,7 +295,10 @@ figure h3 {
 }
 .text{
   color: #FF6060;
-  margin-top: 27px;
+  padding: 27px;
+  line-height: 32px;
+  background: #F7F7F7;
+  border-radius: 5px;
 }
 
 /* Médias queries */
@@ -303,8 +308,10 @@ figure h3 {
   .container {
     max-width: 800px;
   }
-  .logements_container figure {
+  .logements_container a{
     width: 25%;
+  }
+  .logements_container figure {
     height: 200px;
   }
   .logements_container figure h3 {
@@ -323,7 +330,7 @@ figure h3 {
   .container {
     max-width: 600px;
   }
-  .logements_container figure {
+  .logements_container a{
     width: 45%;
   }
   .layout h1 {
@@ -350,8 +357,10 @@ figure h3 {
     padding: 0;
     gap: 20px;
   }
+  .logements_container a{
+    width: 100%
+  }
   .logements_container figure {
-    width: 100%;
     height: 255px;
   }
   .logements_container figure h3 {

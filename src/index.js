@@ -19,12 +19,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage/>
   },
   {
-    path:"/logement",
-    element:<ApartmentPage/> ,
-  },
-  {
     path: "/about",
     element: <About/>,
+    errorElement: <ErrorPage/>
+  },
+  {
+    path: "/logement/:id",
+    element: <ApartmentPage/>,
     errorElement: <ErrorPage/>
   },
 ]);
