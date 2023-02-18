@@ -5,17 +5,17 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import App from "./pages/app";
-import ApartmentPage from './pages/ApartmentPage';
+import Logements from "./pages/logements";
 import About from "./pages/about";
 import ErrorPage from './pages/error404';
 import "../src/assets/css/main.css";
+import Logement from './pages/Logement';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Logements/>,
     errorElement: <ErrorPage/>
   },
   {
@@ -25,8 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/logement/:id",
-    element: <ApartmentPage/>,
-    errorElement: <ErrorPage/>
+    element: <Logement/>,
   },
 ]);
 
