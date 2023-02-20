@@ -301,14 +301,25 @@ figure h3 {
   border-radius: 5px;
 }
 /*Logement*/
- .carousel__active-picture {
-  width: 100%;
+
+.carousel__picture{
+  border-radius: 25px;
+  width: 1240px;
+  height: 415px ;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
+  justify-content: center;
+  object-fit: cover;
+  margin: auto;
+  position: relative
+}
+.carousel__previous{
+  background-color: red;
 }
 
+.carousel__next{
+  background-color: blue;
+}
 /* Médias queries */
 
 @media screen and (max-width: 1024px) {
