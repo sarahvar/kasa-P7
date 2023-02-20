@@ -313,12 +313,16 @@ figure h3 {
   margin: auto;
   position: relative
 }
-.carousel__previous{
-  background-color: red;
+.carousel__previous-icon{
+  position: absolute;
+  top:320px;
+  left: 9.5rem 
 }
 
-.carousel__next{
-  background-color: blue;
+.carousel__next-icon{
+  position:absolute;
+  top: 320px;
+  right: 9.5rem
 }
 /* Médias queries */
 
