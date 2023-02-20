@@ -300,6 +300,14 @@ figure h3 {
   background: #F7F7F7;
   border-radius: 5px;
 }
+/*Logement*/
+ .carousel__active-picture {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+}
 
 /* Médias queries */
 

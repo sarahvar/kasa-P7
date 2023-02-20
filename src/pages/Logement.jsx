@@ -1,10 +1,11 @@
 import React from "react";
+import Header from "../components/Header";
 import { useParams } from "react-router-dom";
 import logements from "../datas/logements.json";
 import Carousel from "../components/utils/carousel";
 import Collapsible from "../components/utils/collapse";
 import Tags from "../components/utils/tag";
-import Rating from "../components/utils/Rating";
+import Rating from "../components/utils/Ratings";
 
 function Logement() {
   const { id } = useParams();
@@ -15,9 +16,10 @@ function Logement() {
     const [name, lastname] = isHostSplited;
   return (
     <main>
+      <Header/>
       <Carousel carousels={pictures} />
-      <Collapsible label="description" content={description} />
-      <Collapsible label="equipements" content={equipments} />
+      {title}
+      {location}
       {logement.tags.map((tag, index) => (
         <Tags key={index} getTag={tag} />
       ))}
@@ -27,8 +29,9 @@ function Logement() {
         <p className="host__firstname">{name.trim()}</p>
         <p className="host__lastname">{lastname.trim()}</p>
       </div>
-
       <img src={host.picture} alt="" className="host__picture" />
+      <Collapsible label="description" content={description} />
+      <Collapsible label="equipements" content={equipments} />
     </div>
     </main>
   );
