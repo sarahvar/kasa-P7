@@ -18,8 +18,8 @@ function Logement() {
     <main>
       <Header/>
       <Carousel carousels={pictures} />
-      {title}
-      {location}
+      <p className="title">{title}</p>
+      <p className="location">{location}</p>
       {logement.tags.map((tag, index) => (
         <Tags key={index} getTag={tag} />
       ))}
@@ -30,8 +30,10 @@ function Logement() {
         <p className="host__lastname">{lastname.trim()}</p>
       </div>
       <img src={host.picture} alt="" className="host__picture" />
-      <Collapsible label="description" content={description} />
-      <Collapsible label="equipements" content={equipments} />
+      <div className="Collapsible">
+      <Collapsible label="description" className="Collapsible-Open" content={description} />
+      <Collapsible label="equipements" className="Collapsible-Open" content={equipments} />
+    </div>
     </div>
     </main>
   );

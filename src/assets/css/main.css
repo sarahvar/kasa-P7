@@ -324,6 +324,51 @@ figure h3 {
   top: 320px;
   right: 9.5rem
 }
+
+.title{
+  margin-top: 30px;
+  color: #FF6060;
+  font-size: 36px;
+  font-weight: 500
+}
+.location{
+  color: #FF6060;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.tag{
+  background-color: #ff6060;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: white;
+  position: relative;
+  display: inline-flex;
+}
+.rating{
+  display: flex;
+  justify-content: right;
+  margin: 25px;
+}
+.host__name{
+  margin-top:-75px;
+  color: #FF6060;
+  display: flex;
+  justify-content: right;
+}
+.host__picture{
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+  margin-left: 87rem;
+  margin-top: -45px;
+}
+.Collapsible{
+  display: flex;
+  justify-content: center;
+}
+
 /* Médias queries */
 
 @media screen and (max-width: 1024px) {
