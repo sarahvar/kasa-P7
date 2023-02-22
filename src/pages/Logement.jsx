@@ -6,6 +6,7 @@ import Carousel from "../components/utils/carousel";
 import Collapsible from "../components/utils/collapse";
 import Tags from "../components/utils/tag";
 import Rating from "../components/utils/Ratings";
+import Footer from "../components/Footer"
 
 function Logement() {
   const { id } = useParams();
@@ -58,6 +59,7 @@ function Logement() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }
