@@ -452,4 +452,11 @@ figure h3 {
   .oups {
     font-size: 18px;
   }
+  .logement_collapse {
+    flex-direction: column;
+  }
+  .logement_informations{
+    width: 100%
+  }
 }
+  
