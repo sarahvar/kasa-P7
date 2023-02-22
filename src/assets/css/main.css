@@ -316,16 +316,22 @@ figure h3 {
 }
 .carousel__previous-icon{
   position: absolute;
-  top:320px;
-  left: 11.5rem 
+  top: 45%;
+  left: 15%
 }
 
 .carousel__next-icon{
   position:absolute;
-  top: 320px;
-  right: 11.5rem
+  top: 45%;
+  right: 15%
 }
-
+.carousel__info{
+  color: #fff;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 10.5rem;
+    right: 50%;
+}
 .title{
   margin-top: 30px;
   color: #FF6060;
@@ -431,6 +437,9 @@ figure h3 {
   .layout h1 {
     font-size: 24px;
   }
+  .carousel__info{
+    bottom:12.5rem;
+  }
   .logements_container {
     background: none;
     margin: 3% 0;
@@ -458,5 +467,12 @@ figure h3 {
   .logement_informations{
     width: 100%
   }
+  .container-content{
+    display:block;
+  }
+  .rating{
+    justify-content: left;
+  }
 }
+
   

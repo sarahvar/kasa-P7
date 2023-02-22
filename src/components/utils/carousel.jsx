@@ -37,8 +37,11 @@ const Carousel = ({carousels}) => {
 			  <div className="carousel__next" onClick={nextSlide}>
 				<img src={arrowright} alt="" className="carousel__next-icon" />
 			  </div>
-			</>
-		  ) : null}
+		   <div className="carousel__info">
+		  <span className="carousel__current-slide">{current + 1}</span> /{" "}
+		  <span className="carousel__total-slides">{length}</span>
+		</div>
+	  </>): null}
 		</div>
 	  );
 	};
