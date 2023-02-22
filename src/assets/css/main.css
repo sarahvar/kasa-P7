@@ -305,7 +305,7 @@ figure h3 {
 
 .carousel__picture{
   border-radius: 25px;
-  width: 1240px;
+  width: 100%;
   height: 415px ;
   display: flex;
   flex-direction: row;
@@ -323,7 +323,7 @@ figure h3 {
 .carousel__next-icon{
   position:absolute;
   top: 320px;
-  right: 9.5rem
+  right: 11.5rem
 }
 
 .title{
@@ -364,6 +364,7 @@ figure h3 {
 .container-host{
   display: flex;
   align-items: center;
+  justify-content: right;
 }
 .container-content{
   display: flex;
