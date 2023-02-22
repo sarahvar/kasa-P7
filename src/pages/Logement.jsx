@@ -14,22 +14,37 @@ function Logement() {
     logement;
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
+  const equipmentsMap = equipments.map((item, index) => (
+    <li key={index}>{item}</li>
+  ));
   return (
-    <main>
+    <>
       <Header />
-      <Carousel carousels={pictures} />
-      <p className="title">{title}</p>
-      <p className="location">{location}</p>
-      {logement.tags.map((tag, index) => (
-        <Tags key={index} getTag={tag} />
-      ))}
-      <Rating rating={rating} />
-      <div className="host">
-        <div className="host__name">
-          <p className="host__firstname">{name.trim()}</p>
-          <p className="host__lastname">{lastname.trim()}</p>
-        </div>
-        <img src={host.picture} alt="" className="host__picture" />
+      <main className="container">
+        <Carousel carousels={pictures} />
+        <section className="container-content">
+          <div>
+            <p className="title">{title}</p>
+            <p className="location">{location}</p>
+            <div className="container-tag">
+              {logement.tags.map((tag, index) => (
+                <Tags key={index} getTag={tag} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="host">
+              <div className="container-host">
+                <div className="host__name">
+                  <p className="host__firstname">{name.trim()}</p>
+                  <p className="host__lastname">{lastname.trim()}</p>
+                </div>
+                <img src={host.picture} alt="" className="host__picture" />
+              </div>
+            </div>
+            <Rating rating={rating} />
+          </div>
+        </section>
         <div className="logement_collapse">
           <div className="logement_informations">
             <Collapsible label="Description" content={description} />
@@ -38,12 +53,12 @@ function Logement() {
             <Collapsible
               label="Equipements"
               className=""
-              content={equipments}
+              content={equipmentsMap}
             />
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }
 export default Logement;

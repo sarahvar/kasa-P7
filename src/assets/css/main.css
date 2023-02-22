@@ -317,7 +317,7 @@ figure h3 {
 .carousel__previous-icon{
   position: absolute;
   top:320px;
-  left: 9.5rem 
+  left: 11.5rem 
 }
 
 .carousel__next-icon{
@@ -328,46 +328,47 @@ figure h3 {
 
 .title{
   margin-top: 30px;
-  margin: 0 9%;
   color: #FF6060;
-  font-size: 36px;
+  font-size: 47px;
   font-weight: 500
 }
 .location{
   color: #FF6060;
-  font-size: 18px;
-  margin: 0 9%;
+  font-size: 26px;
+  margin-top: 10px;
   font-weight: 500
 }
-
+.container-tag{
+  display:flex;
+  gap: 32px;
+}
 .tag{
   background-color: #ff6060;
   padding: 0.3rem 1rem;
-  margin: 0 9%;
   border-radius: 1rem;
-  margin-right: 1rem;
+  margin-top: 35px;
   color: white;
-  position: relative;
-  display: inline-flex;
 }
 .rating{
   display: flex;
   justify-content: right;
-  margin: 0 9%;
 }
 .host__name{
-  margin-top:-75px;
-  margin: 0 9%;
   color: #FF6060;
-  display: flex;
-  justify-content: right;
 }
 .host__picture{
   border-radius: 50%;
   height: 64px;
   width: 64px;
-  margin-left: 87rem;
-  margin-top: -45px;
+}
+.container-host{
+  display: flex;
+  align-items: center;
+}
+.container-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logement_collapse {
   display: flex;
@@ -375,7 +376,6 @@ figure h3 {
 }
 .logement_informations {
   width: 48%;
-  margin: 0 9%;
   padding: 0 0 14px 0
 }
 
