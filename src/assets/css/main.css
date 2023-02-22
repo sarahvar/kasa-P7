@@ -300,6 +300,7 @@ figure h3 {
   background: #F7F7F7;
   border-radius: 5px;
 }
+
 /*Logement*/
 
 .carousel__picture{
@@ -327,6 +328,7 @@ figure h3 {
 
 .title{
   margin-top: 30px;
+  margin: 0 9%;
   color: #FF6060;
   font-size: 36px;
   font-weight: 500
@@ -334,12 +336,14 @@ figure h3 {
 .location{
   color: #FF6060;
   font-size: 18px;
+  margin: 0 9%;
   font-weight: 500
 }
 
 .tag{
   background-color: #ff6060;
   padding: 0.3rem 1rem;
+  margin: 0 9%;
   border-radius: 1rem;
   margin-right: 1rem;
   color: white;
@@ -349,10 +353,11 @@ figure h3 {
 .rating{
   display: flex;
   justify-content: right;
-  margin: 25px;
+  margin: 0 9%;
 }
 .host__name{
   margin-top:-75px;
+  margin: 0 9%;
   color: #FF6060;
   display: flex;
   justify-content: right;
@@ -364,10 +369,16 @@ figure h3 {
   margin-left: 87rem;
   margin-top: -45px;
 }
-.Collapsible{
+.logement_collapse {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
+.logement_informations {
+  width: 48%;
+  margin: 0 9%;
+  padding: 0 0 14px 0
+}
+
 
 /* Médias queries */
 

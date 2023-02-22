@@ -12,11 +12,11 @@ function Logement() {
   const logement = logements.find((logement) => logement.id === id);
   const { title, location, rating, host, equipments, description, pictures } =
     logement;
-    const isHostSplited = host.name.split(" ");
-    const [name, lastname] = isHostSplited;
+  const isHostSplited = host.name.split(" ");
+  const [name, lastname] = isHostSplited;
   return (
     <main>
-      <Header/>
+      <Header />
       <Carousel carousels={pictures} />
       <p className="title">{title}</p>
       <p className="location">{location}</p>
@@ -25,16 +25,24 @@ function Logement() {
       ))}
       <Rating rating={rating} />
       <div className="host">
-      <div className="host__name">
-        <p className="host__firstname">{name.trim()}</p>
-        <p className="host__lastname">{lastname.trim()}</p>
+        <div className="host__name">
+          <p className="host__firstname">{name.trim()}</p>
+          <p className="host__lastname">{lastname.trim()}</p>
+        </div>
+        <img src={host.picture} alt="" className="host__picture" />
+        <div className="logement_collapse">
+          <div className="logement_informations">
+            <Collapsible label="Description" content={description} />
+          </div>
+          <div className="logement_informations">
+            <Collapsible
+              label="Equipements"
+              className=""
+              content={equipments}
+            />
+          </div>
+        </div>
       </div>
-      <img src={host.picture} alt="" className="host__picture" />
-      <div className="Collapsible">
-      <Collapsible label="description" className="Collapsible-Open" content={description} />
-      <Collapsible label="equipements" className="Collapsible-Open" content={equipments} />
-    </div>
-    </div>
     </main>
   );
 }
