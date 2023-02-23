@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
 
+//Créer la page error en cas d'erreurs et utiliser pour les 3 pages
 export default function ErrorPage() {
   return (
     <div className="error-page">

@@ -1,5 +1,7 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import headerimg from "../assets/images/logo.svg";
+
+//Créer le component Header réutilisable pour la page about et Logement
 export default function Header() {
   return (
     <header>
@@ -9,7 +11,9 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-          <Link className="accueil" to={"/"}>Accueil</Link>
+            <Link className="accueil" to={"/"}>
+              Accueil
+            </Link>
           </li>
           <li>
             <Link to={"/about"}>A propos</Link>
