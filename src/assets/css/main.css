@@ -250,6 +250,7 @@ figure h3 {
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
+  text-align: center;
 }
 /*Error 404*/
 .error-page {
@@ -314,16 +315,17 @@ figure h3 {
   margin: auto;
   position: relative
 }
-.carousel__previous-icon{
+.carousel__previous{
   position: absolute;
-  top: 45%;
-  left: 15%
+  top: 50%;
+  transform: translate(0,-50%);
 }
+.carousel__next{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 11%;
 
-.carousel__next-icon{
-  position:absolute;
-  top: 45%;
-  right: 15%
 }
 .carousel__info{
   color: #fff;
@@ -410,6 +412,9 @@ figure h3 {
   .title-error {
     font-size: 200px;
   }
+  .carousel__info{
+    bottom: 5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   header,
@@ -421,6 +426,9 @@ figure h3 {
   }
   .layout h1 {
     font-size: 32px;
+  }
+  .carousel__info{
+    bottom: 6rem
   }
 }
 @media screen and (max-width: 500px) {
@@ -470,9 +478,28 @@ figure h3 {
   .container-content{
     display:block;
   }
-  .rating{
-    justify-content: left;
-  }
+ .host{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .carousel__next{
+  right: 6%
+}
+.carousel__info{
+  bottom: 7rem
+}
+}
+
+
+@media screen and (max-width: 378px) {
+.carousel__info{
+  bottom: 10rem
+}
+.carousel__next {
+  right: 0%
+}
 }
 
   

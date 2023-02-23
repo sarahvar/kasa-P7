@@ -6,7 +6,7 @@ import Carousel from "../components/utils/carousel";
 import Collapsible from "../components/utils/collapse";
 import Tags from "../components/utils/tag";
 import Rating from "../components/utils/Ratings";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 function Logement() {
   const { id } = useParams();
@@ -42,8 +42,8 @@ function Logement() {
                 </div>
                 <img src={host.picture} alt="" className="host__picture" />
               </div>
+              <Rating rating={rating} />
             </div>
-            <Rating rating={rating} />
           </div>
         </section>
         <div className="logement_collapse">
