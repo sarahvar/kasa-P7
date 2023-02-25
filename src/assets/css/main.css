@@ -281,7 +281,7 @@ figure h3 {
   font-weight: 500;
   color: #ff6060;
 }
-
+/*Collapse*/
 .button {
   font-family: "Montserrat", sans-serif;
   width: 100%;
@@ -295,7 +295,7 @@ figure h3 {
   border: 1px solid #ff6060;
   border-radius: 5px;
 }
-.text {
+.collapse__content {
   color: #ff6060;
   padding: 27px;
   line-height: 32px;
@@ -320,12 +320,14 @@ figure h3 {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  cursor:pointer
 }
 .carousel__next {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   right: 11%;
+  cursor:pointer
 }
 .carousel__info {
   color: #fff;
@@ -483,9 +485,6 @@ figure h3 {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-  }
-  .carousel__next {
-    right: 6%;
   }
   .carousel__info {
     bottom: 7rem;

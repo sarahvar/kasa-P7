@@ -15,9 +15,7 @@ function Logement() {
     logement;
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
-  const equipmentsMap = equipments.map((item, index) => (
-    <li key={index}>{item}</li>
-  ));
+
   return (
     <>
       <Header />
@@ -54,7 +52,7 @@ function Logement() {
             <Collapsible
               label="Equipements"
               className=""
-              content={equipmentsMap}
+              content={equipments}
             />
           </div>
         </div>

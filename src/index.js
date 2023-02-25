@@ -1,6 +1,6 @@
+  //Permets d'importer les components 
 import React from "react";
 import ReactDOM from "react-dom/client";
-/*import App from './components/App';*/
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Logements from "./pages/Logements";
@@ -34,7 +34,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// Si vous souhaitez commencer à mesurer les performances de votre application, passez une fonction
-// pour consigner les résultats (par exemple : reportWebVitals(console.log))
-// ou envoyer à un point de terminaison d'analyse. En savoir plus : https://bit.ly/CRA-vitals
 reportWebVitals();

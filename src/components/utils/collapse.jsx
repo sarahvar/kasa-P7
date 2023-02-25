@@ -21,8 +21,17 @@ const Collapsible = (props) => {
           </span>
         )}
       </button>
-      {open && <p className="text">{props.content}</p>}
+      {!open && (
+      Array.isArray(props.content) ? ( 
+        <ul className='collapse__content'> {props.content.map((item, index) => (
+          <li key={index}>{item}</li>
+        )) }</ul> 
+        ) : (
+       <p className='collapse__content'>{props.content}</p>
+      )
+      )}
     </div>
   );
 };
 export default Collapsible;
+
