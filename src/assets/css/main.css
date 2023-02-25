@@ -480,6 +480,16 @@ figure h3 {
   .container-content {
     display: block;
   }
+  .carousel__picture{
+    height: 255px;
+  }
+  .carousel__previous{
+    transform: translate(0, -175%);
+  }
+  .carousel__next{
+    transform: translate(0, -175%);
+    right: 6%
+  }
   .host {
     display: flex;
     flex-direction: row-reverse;
@@ -487,7 +497,8 @@ figure h3 {
     align-items: center;
   }
   .carousel__info {
-    bottom: 7rem;
+    bottom: 19rem;
+    right: 45%;
   }
   .rating {
     padding-top: 20px;
@@ -495,7 +506,7 @@ figure h3 {
 }
 @media screen and (max-width: 378px) {
   .carousel__info {
-    bottom: 10rem;
+    bottom: 19rem;
   }
   .carousel__next {
     right: 0%;
